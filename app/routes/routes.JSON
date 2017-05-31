@@ -1,0 +1,10 @@
+// acts as a dictionary that tells which route is which
+//4 routes: index, create, update, delete
+
+
+    {
+      "index": "/index",
+      "create": "/create",
+      "update": "/update",
+      "delete": "/delete"
+    }
