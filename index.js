@@ -3,6 +3,7 @@ var express = require('express'),
     bcrypt = require('bcrypt-nodejs'),
     bodyParser = require('body-parser'),
     session = require('express-session'),
+    methodOverride = require('method-override'),
     mongoose = require('mongoose'),
     passport = require('passport'),
     //User = require('./user'),
@@ -23,6 +24,8 @@ var express = require('express'),
     saveUninitialized: true
   }));
 
+    app.use(methodOverride('_method'));
+    
     app.use(passport.initialize());
     app.use(passport.session());
 
